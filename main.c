@@ -19,12 +19,18 @@ int main()
           printf(" ");
       }
       int l=mid;
+      int n=0;
       for(int j=1;j<=i;j++)
       {
           printf("%c",a[l]);
+          if(a[l]==NULL||a[l]==length)
+          {
+              printf("%c",a[n]);
+              n++;
+          }
           l++;
+          
       }
-      
       printf("\n");
   }
 }
